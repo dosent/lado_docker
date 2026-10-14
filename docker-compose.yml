@@ -7,11 +7,11 @@ services:
         LADO_UID: ${LADO_UID:-1000}
         LADO_GID: ${LADO_GID:-1000}
     ports:
-      - "127.0.0.1:9898:8000"
+      - "9898:8000"
       - "127.0.0.1:1455:1455"
     environment:
       LADO_HOME: /var/lib/lado
-      LADO_PUBLIC_URL: http://localhost:9898
+      LADO_PUBLIC_URL: ${LADO_PUBLIC_URL:-http://vm-neshin-test.simbirsoft:9898}
       LADO_AGENT_ENV: inherit
       SHELL: /bin/bash
     volumes:

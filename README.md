@@ -20,7 +20,7 @@ docker compose up --build -d
 docker compose logs lado
 ```
 
-Веб-интерфейс доступен на [http://localhost:9898](http://localhost:9898). Не публикуйте ссылку с токеном или логи, содержащие её.
+Веб-интерфейс по умолчанию доступен на [http://vm-neshin-test.simbirsoft:9898](http://vm-neshin-test.simbirsoft:9898). Для другого адреса задайте `LADO_PUBLIC_URL` в `.env`, например `LADO_PUBLIC_URL=http://localhost:9898`. Порт `9898` опубликован на всех сетевых интерфейсах сервера; ограничьте доступ к нему firewall-ом. Не публикуйте ссылку с токеном или логи, содержащие её.
 
 ## Авторизация Codex
 
